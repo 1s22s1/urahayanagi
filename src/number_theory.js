@@ -12,3 +12,9 @@ exports.gcd = (m, n) => {
     b = remainder
   }
 }
+
+// m * n = gcd(m, n) * lcm(m, n) holds.
+// cf. https://manabitimes.jp/math/1032
+exports.lcm = (m, n) => {
+  return m * n / this.gcd(m, n)
+}

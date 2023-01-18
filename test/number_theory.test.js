@@ -21,3 +21,17 @@ describe('gcd', () => {
     expect(numberTheory.gcd(256, 160)).toBe(32)
   })
 })
+
+describe('lcm', () => {
+  test('given 2 and 6 is 6', () => {
+    expect(numberTheory.lcm(2, 6)).toBe(6)
+  })
+
+  test('given 2 and 7 is 14', () => {
+    expect(numberTheory.lcm(2, 7)).toBe(14)
+  })
+
+  test('given 407 and 481 is 5291', () => {
+    expect(numberTheory.lcm(407, 481)).toBe(5291)
+  })
+})
