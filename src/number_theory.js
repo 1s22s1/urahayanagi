@@ -1,4 +1,4 @@
-function gcd (m, n) {
+exports.gcd = (m, n) => {
   let [a, b] = m > n ? [m, n] : [n, m]
 
   while (true) {
@@ -12,5 +12,3 @@ function gcd (m, n) {
     b = remainder
   }
 }
-
-module.exports = gcd
