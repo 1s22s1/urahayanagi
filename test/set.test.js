@@ -1,4 +1,4 @@
-const union = require('./set')
+const union = require('../src/set')
 
 test('The union of 1, 2, 3, 4 and 2, 4, 6, 8 is 1, 2, 3, 4, 6, 8', () => {
     expect(union([1, 2, 3, 4], [2, 4, 6, 8])).toEqual([1, 2, 3, 4, 6, 8])

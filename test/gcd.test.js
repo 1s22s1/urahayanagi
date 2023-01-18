@@ -1,4 +1,4 @@
-const gcd = require('./gcd')
+const gcd = require('../src/gcd')
 
 test('The least common divisor of 2 and 6 is 2', () => {
   expect(gcd(2, 6)).toBe(2)
