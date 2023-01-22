@@ -5,3 +5,7 @@ exports.isOn = (num, bitNum) => {
 exports.isOff = (num, bitNum) => {
   return !this.isOn(num, bitNum)
 }
+
+exports.on = (num, bitNum) => {
+  return num | (1 << bitNum)
+}
