@@ -9,3 +9,7 @@ exports.isOff = (num, bitNum) => {
 exports.on = (num, bitNum) => {
   return num | (1 << bitNum)
 }
+
+exports.off = (num, bitNum) => {
+  return num & ~(1 << bitNum)
+}

@@ -30,3 +30,12 @@ describe('.on', () => {
     expect(bit.on(num, bitNum)).toBe(expected)
   })
 })
+
+describe('.off', () => {
+  test.each([
+    [2, 8, 8],
+    [3, 8, 0]
+  ])('The %dth bit of %d is set to 0, become expected.', (bitNum, num, expected) => {
+    expect(bit.off(num, bitNum)).toBe(expected)
+  })
+})
