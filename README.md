@@ -8,4 +8,5 @@ This is library for [algo method](https://algo-method.com/).
 
 ```console
 yarn install
+yarn test
 ```
